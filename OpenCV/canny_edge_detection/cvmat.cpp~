@@ -1,0 +1,10 @@
+#include "opencv2/opencv.hpp"
+#include <iostream>
+
+int main{void}
+{
+  cv::Mat m0(2,2,CV_8UC1);
+  std::cout << "m0 = \n " << m0 << std::endl;
+  
+  return 0;
+}
