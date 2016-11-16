@@ -49,6 +49,7 @@ boost::shared_ptr<pcl::visualization::PCLVisualizer> rgbVis (pcl::PointCloud<pcl
   // --------------------------------------------
   // -----Open 3D viewer and add point cloud-----
   // --------------------------------------------
+  
   boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer (new pcl::visualization::PCLVisualizer ("3D Viewer"));
   viewer->setBackgroundColor (0, 0, 0);
   pcl::visualization::PointCloudColorHandlerRGBField<pcl::PointXYZRGB> rgb(cloud);
@@ -320,12 +321,7 @@ main (int argc, char** argv)
   point_cloud_ptr->width = (int) point_cloud_ptr->points.size ();
   point_cloud_ptr->height = 1;
   
-  if (pcl::io::loadPCDFile<pcl::PointXYZRGB> ("../cloud.pcd", *point_cloud_ptr) == -1) //* load the file
-  {
-    PCL_ERROR ("Couldn't read file test_pcd.pcd \n");
-    return (-1);
-  }
-  
+ 
 
   // ----------------------------------------------------------------
   // -----Calculate surface normals with a search radius of 0.05-----

@@ -7,7 +7,6 @@
 #include <pcl/segmentation/sac_segmentation.h>
 #include <pcl/filters/voxel_grid.h>
 #include <pcl/filters/extract_indices.h>
-#include <pcl/visualization/cloud_viewer.h>
 
 int
 main (int argc, char** argv)
@@ -17,7 +16,7 @@ main (int argc, char** argv)
 
   // Fill in the cloud data
   pcl::PCDReader reader;
-  reader.read ("../ellipsoid.pcd", *cloud_blob);
+  reader.read ("../table_scene_lms400.pcd", *cloud_blob);
 
   std::cerr << "PointCloud before filtering: " << cloud_blob->width * cloud_blob->height << " data points." << std::endl;
 
@@ -80,12 +79,6 @@ main (int argc, char** argv)
     extract.filter (*cloud_f);
     cloud_filtered.swap (cloud_f);
     i++;
-  }
-  
-  pcl::visualization::CloudViewer viewer("Cloud Viewer");
-  viewer.showCloud(cloud_f);
-  while  (! viewer.wasStopped ())
-  { //no -op  until  viewer  stopped
   }
 
   return (0);
