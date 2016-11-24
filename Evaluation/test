@@ -1,0 +1,1 @@
+opencv_traincascade  -data  classifier  -vec  samples.vec -bg  negatives.txt -numStages  10 -acceptanceRatioBreakValue  10e-5 -numPos  350 -numNeg  400 -w 25 -h 10 -mode  ALL -precalcValBufSize  2048   -precalcIdxBufSize  2048

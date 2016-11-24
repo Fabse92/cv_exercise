@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/informatik2/students/home/2schmid/cv_exercise/Evaluation/Classification/cascadedet/src/cascadedet.cpp
+opencv2/objdetect.hpp
+/informatik2/students/home/2schmid/cv_exercise/Evaluation/Classification/cascadedet/src/opencv2/objdetect.hpp
+opencv2/highgui.hpp
+/informatik2/students/home/2schmid/cv_exercise/Evaluation/Classification/cascadedet/src/opencv2/highgui.hpp
+opencv2/imgproc.hpp
+/informatik2/students/home/2schmid/cv_exercise/Evaluation/Classification/cascadedet/src/opencv2/imgproc.hpp
+iostream
+-
+

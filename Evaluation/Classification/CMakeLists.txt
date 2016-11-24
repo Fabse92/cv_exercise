@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( cascadedet )
+find_package( OpenCV REQUIRED )
+set(CMAKE_BUILD_TYPE Release)
+add_executable( cascadedet src/cascadedet.cpp )
+target_link_libraries( cascadedet ${OpenCV_LIBS} )
